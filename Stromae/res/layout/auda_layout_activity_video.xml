@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/MainContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ListView
+        android:id="@+id/ListVideo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/blue"
+        android:dividerHeight="0dip" />
+
+    <RelativeLayout
+        android:id="@+id/EmptyFavoritesMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/selector"
+        android:visibility="invisible" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:gravity="center_horizontal"
+            android:text="Your Favorite List is empty ! Check some videos "
+            android:textColor="@color/flat_clouds"
+             android:layout_margin="10dp"
+            android:textSize="@dimen/music_item_text_size"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+</RelativeLayout>

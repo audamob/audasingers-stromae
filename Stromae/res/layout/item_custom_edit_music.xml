@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ItemSong"
+    android:layout_width="match_parent"
+    android:layout_height="80dip"
+    android:background="#E5E5E5" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/selector" >
+
+        <RelativeLayout
+            android:id="@+id/Layouticon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip" >
+
+            <ImageView
+                android:id="@+id/Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/iconvideo" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/LayoutTaxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:layout_toRightOf="@+id/Layouticon" >
+
+            <TextView
+                android:id="@+id/nam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:text="salut   azcdf  zd  "
+                android:textColor="#444"
+                android:textSize="20dip"
+                android:textStyle="normal" />
+        </RelativeLayout>
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:button="@drawable/checkbox"
+            android:focusable="false" />
+    </RelativeLayout>
+
+</RelativeLayout>

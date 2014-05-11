@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ItemSong"
+    android:layout_width="50dip"
+    android:layout_height="50dip"
+    android:layout_marginRight="10dp"
+    android:background="#E5E5E5"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp" >
+
+    <RelativeLayout
+        android:id="@+id/Layouticon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dip" >
+
+        <ImageView
+            android:id="@+id/Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/iconvideo" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/LayoutTaxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="2dip"
+        android:layout_toRightOf="@+id/Layouticon" >
+
+        <TextView
+            android:id="@+id/nam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="salut   azcdf  zd  "
+            android:textColor="@color/blue"
+            android:textSize="18dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/Number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nam"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="30dip"
+            android:text="salut dcazcd  zdcaz  "
+            android:textColor="@color/blue"
+            android:textSize="10dp"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dip"
+        android:src="@drawable/playvideo" />
+
+</RelativeLayout>
