@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF" >
+
+        <RelativeLayout
+            android:id="@+id/search"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:background="#FFFFFF" >
+
+            <TextView
+                android:id="@+id/PlaylistName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/blue"
+                android:textSize="17dip"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="0px"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="6"
+                    android:background="@color/blue"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip" >
+
+                    <TextView
+                        android:id="@+id/deleteAll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/tab_playlists_delete_all"
+                        android:textColor="#FFFFFF"
+                        android:textSize="17dip"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sep1"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_below="@+id/search"
+            android:background="@color/blue" >
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/ListPlayListeditt"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/Done"
+            android:layout_below="@+id/sep1"
+            android:background="#FFFFFF"
+            android:divider="@color/blue"
+            android:dividerHeight="0dip" />
+
+        <RelativeLayout
+            android:id="@+id/Done"
+            android:layout_width="fill_parent"
+            android:layout_height="30dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/blue" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/tab_playlists_done"
+                android:textColor="#FFFFFF"
+                android:textSize="17dip" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

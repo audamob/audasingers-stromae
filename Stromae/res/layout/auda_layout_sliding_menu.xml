@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/MainContainer2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/audamob_version_deux_bg_blur" >
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:divider="@drawable/audamob_version_deux_separator"
+        android:dividerHeight="1dip"
+        android:scrollbars="none" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/MenuHeaderLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="5"
+            android:background="@drawable/bg_opacity" >
+
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="@dimen/sliding_menu_profile_picture_height"
+                android:layout_height="@dimen/sliding_menu_profile_picture_height"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/sliding_menu_profile_picture_margin_top"
+                android:contentDescription="@string/profile"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/sliding_menu_profile_name_margin_top"
+                android:text="@string/singer_name"
+                android:textColor="@color/flat_clouds"
+                android:textSize="@dimen/sliding_menu_profile_name_height" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/sliding_menu_audasingers_margin_bottom"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="@dimen/sliding_menu_audasingers_margin_top" >
+
+                <RelativeLayout
+                    android:id="@+id/audasigners_separator"
+                    android:layout_width="1dp"
+                    android:layout_height="16dp"
+                    android:layout_centerVertical="true"
+                    android:background="#CCC" >
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/audasigners_separator"
+                    android:text="@string/audasigners_text"
+                    android:textColor="@color/separator_color"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/MenuItems"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="8"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/ItemMenu_1"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1" >
+
+                <RelativeLayout
+                    android:id="@+id/selector_1"
+                    android:layout_width="@dimen/sliding_menu_selector_item_width"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:background="@color/graphical_charte"
+                    android:visibility="visible" >
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/seperator_top_item_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/audamob_version_deux_separator" >
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/row_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="@dimen/sliding_menu_item_image_margin_left"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/audamob_version_deux_sliding_menu_ic_videos" />
+
+                <TextView
+                    android:id="@+id/row_title_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/sliding_menu_item_image_margin_left"
+                    android:layout_toRightOf="@+id/row_icon"
+                    android:text="@string/Video_text"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/sliding_menu_item_title_height" />
+
+                <!-- Notification New Videos -->
+
+                <TextView
+                    android:id="@+id/row_title_1_notification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/audamob_version_deux_notif_bg"
+                    android:gravity="center"
+                    android:paddingBottom="1dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="1dp"
+                    android:text="+3"
+                    android:textColor="#ffffff"
+                    android:visibility="visible" />
+
+                <RelativeLayout
+                    android:id="@+id/seperator_bottom_item_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/audamob_version_deux_separator"
+                    android:visibility="visible" >
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ItemMenu_11"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_below="@+id/ItemMenu_1"
+                android:layout_weight="1"
+                android:background="@drawable/bg_opacity" >
+
+                <RelativeLayout
+                    android:id="@+id/selector_11"
+                    android:layout_width="@dimen/sliding_menu_selector_item_width"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:background="@color/graphical_charte"
+                    android:visibility="invisible" >
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/seperator_top_item_11"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/audamob_version_deux_separator"
+                    android:visibility="invisible" >
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/row_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="@dimen/sliding_menu_item_image_margin_left"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/audamob_version_deux_sliding_menu_ic_favorites" />
+
+                <TextView
+                    android:id="@+id/row_title_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/sliding_menu_item_image_margin_left"
+                    android:layout_toRightOf="@+id/row_icon"
+                    android:text="@string/tab_favorites"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/sliding_menu_item_title_height" />
+
+                <RelativeLayout
+                    android:id="@+id/seperator_bottom_item_11"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/audamob_version_deux_separator"
+                    android:visibility="invisible" >
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ItemMenu_2"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_below="@+id/ItemMenu_11"
+                android:layout_weight="1"
+                android:background="@drawable/bg_opacity" >
+
+                <RelativeLayout
+                    android:id="@+id/selector_2"
+                    android:layout_width="@dimen/sliding_menu_selector_item_width"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:background="@color/graphical_charte"
+                    android:visibility="invisible" >
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/seperator_top_item_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/audamob_version_deux_separator"
+                    android:visibility="invisible" >
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/row_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="@dimen/sliding_menu_item_image_margin_left"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/audamob_version_deux_sliding_menu_ic_musics" />
+
+                <TextView
+                    android:id="@+id/row_title_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/sliding_menu_item_image_margin_left"
+                    android:layout_toRightOf="@+id/row_icon"
+                    android:text="@string/Music_text"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/sliding_menu_item_title_height" />
+
+                <!-- Notification New Musics -->
+
+                <TextView
+                    android:id="@+id/row_title_2_notification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/audamob_version_deux_notif_bg"
+                    android:gravity="center"
+                    android:paddingBottom="1dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="1dp"
+                    android:text="+3"
+                    android:textColor="#ffffff"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:id="@+id/seperator_bottom_item_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/audamob_version_deux_separator"
+                    android:visibility="invisible" >
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ItemMenu_22"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_below="@+id/ItemMenu_2"
+                android:layout_weight="1"
+                android:background="@drawable/bg_opacity" >
+
+                <RelativeLayout
+                    android:id="@+id/selector_22"
+                    android:layout_width="@dimen/sliding_menu_selector_item_width"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:background="@color/graphical_charte"
+                    android:visibility="invisible" >
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/seperator_top_item_22"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/audamob_version_deux_separator"
+                    android:visibility="invisible" >
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/row_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="@dimen/sliding_menu_item_image_margin_left"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/audamob_version_deux_sliding_menu_ic_playlists" />
+
+                <TextView
+                    android:id="@+id/row_title_22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/sliding_menu_item_image_margin_left"
+                    android:layout_toRightOf="@+id/row_icon"
+                    android:text="@string/Music_Playlist_text"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/sliding_menu_item_title_height" />
+
+                <RelativeLayout
+                    android:id="@+id/seperator_bottom_item_22"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/audamob_version_deux_separator"
+                    android:visibility="invisible" >
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ItemMenu_3"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_below="@+id/ItemMenu_22"
+                android:layout_weight="1"
+                android:background="@drawable/bg_opacity" >
+
+                <RelativeLayout
+                    android:id="@+id/selector_3"
+                    android:layout_width="@dimen/sliding_menu_selector_item_width"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:background="@color/graphical_charte"
+                    android:visibility="invisible" >
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/seperator_top_item_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/audamob_version_deux_separator"
+                    android:visibility="invisible" >
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/row_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="@dimen/sliding_menu_item_image_margin_left"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/audamob_version_deux_sliding_menu_ic_lyrics" />
+
+                <TextView
+                    android:id="@+id/row_title_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/sliding_menu_item_image_margin_left"
+                    android:layout_toRightOf="@+id/row_icon"
+                    android:text="@string/Lyrics_text"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/sliding_menu_item_title_height" />
+
+                <RelativeLayout
+                    android:id="@+id/seperator_bottom_item_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/audamob_version_deux_separator"
+                    android:visibility="invisible" >
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ItemMenu_4"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_below="@+id/ItemMenu_3"
+                android:layout_weight="1"
+                android:background="@drawable/bg_opacity" >
+
+                <RelativeLayout
+                    android:id="@+id/selector_4"
+                    android:layout_width="@dimen/sliding_menu_selector_item_width"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:background="@color/graphical_charte"
+                    android:visibility="invisible" >
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/seperator_top_item_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/audamob_version_deux_separator"
+                    android:visibility="invisible" >
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/row_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="@dimen/sliding_menu_item_image_margin_left"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/audamob_version_deux_sliding_menu_ic_news" />
+
+                <TextView
+                    android:id="@+id/row_title_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/sliding_menu_item_image_margin_left"
+                    android:layout_toRightOf="@+id/row_icon"
+                    android:text="@string/News_text"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/sliding_menu_item_title_height" />
+
+                <RelativeLayout
+                    android:id="@+id/seperator_bottom_item_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/audamob_version_deux_separator"
+                    android:visibility="invisible" >
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ItemMenu_7"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_below="@+id/ItemMenu_4"
+                android:layout_weight="1"
+                android:background="@drawable/bg_opacity" >
+
+                <RelativeLayout
+                    android:id="@+id/selector_7"
+                    android:layout_width="@dimen/sliding_menu_selector_item_width"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:background="@color/graphical_charte"
+                    android:visibility="invisible" >
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/seperator_top_item_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/audamob_version_deux_separator"
+                    android:visibility="invisible" >
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/row_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="@dimen/sliding_menu_item_image_margin_left"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/audamob_version_deux_sliding_menu_ic_settings" />
+
+                <TextView
+                    android:id="@+id/row_title_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/sliding_menu_item_image_margin_left"
+                    android:layout_toRightOf="@+id/row_icon"
+                    android:text="@string/Settings_text"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/sliding_menu_item_title_height" />
+
+                <RelativeLayout
+                    android:id="@+id/seperator_bottom_item_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/audamob_version_deux_separator"
+                    android:visibility="invisible" >
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ItemSong"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector"
+        android:padding="2dp" >
+
+        <RelativeLayout
+            android:id="@+id/Layouticon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#55CCCCCC" >
+
+            <com.google.android.youtube.player.YouTubeThumbnailView
+                android:id="@+id/youtubethumbnailview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/LayoutTaxt"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/Layouticon"
+            android:layout_centerVertical="true"
+            android:background="@color/graphical_charte" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true" >
+
+                <TextView
+                    android:id="@+id/nam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="salut   azcdf  zd  "
+                    android:textColor="@color/flat_clouds"
+                    android:textSize="20dp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/Number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/nam"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="30dp"
+                    android:text="salut dcazcd  zdcaz  "
+                    android:textColor="@color/flat_clouds"
+                    android:textSize="11dp"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_alignParentBottom="true" >
+
+                <RelativeLayout
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="0px"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" >
+
+                            <RelativeLayout
+                                android:id="@+id/r_checkbox"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" >
+
+                                <CheckBox
+                                    android:id="@+id/checkbox"
+                                    android:layout_width="20dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:button="@drawable/checkbox"
+                                    android:visibility="invisible" />
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/nbrFavoritesTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toRightOf="@+id/r_checkbox"
+                                android:text="15k"
+                                android:textColor="@color/separator_color"
+                                android:textSize="@dimen/textsize_video_item_play" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0px"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="5dp" >
+
+                            <RelativeLayout
+                                android:id="@+id/separator"
+                                android:layout_width="1dp"
+                                android:layout_height="15dp"
+                                android:layout_centerVertical="true"
+                                android:background="#CCC" >
+                            </RelativeLayout>
+
+                            <ImageView
+                                android:id="@+id/play"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toRightOf="@+id/separator"
+                                android:src="@drawable/audamob_version_deux_nombre_lecture" />
+
+                            <TextView
+                                android:id="@+id/nbrPlayTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toRightOf="@+id/play"
+                                android:text="15k"
+                                android:textColor="@color/separator_color"
+                                android:textSize="@dimen/textsize_video_item_play" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0px"
+                        android:layout_height="25dp"
+                        android:layout_weight="1" >
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="5dp" >
+
+                            <RelativeLayout
+                                android:id="@+id/separator"
+                                android:layout_width="1dp"
+                                android:layout_height="15dp"
+                                android:layout_centerVertical="true"
+                                android:background="#CCC" >
+                            </RelativeLayout>
+
+                            <ImageView
+                                android:id="@+id/partager"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toRightOf="@+id/separator"
+                                android:src="@drawable/audamob_version_deux_partager" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipeytabs="http://schemas.android.com/apk/res/com.LiL.Wayne.Activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/MainContainer"
+  >
+
+   
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+       
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/headerheda"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:orientation="horizontal" 
+            android:background="@color/theme_bleu_trans">
+
+            <RelativeLayout
+                android:id="@+id/tab_section_1"
+                android:layout_width="0px"
+                android:layout_height="50dip"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/Icon_home"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dip"
+                    android:background="@drawable/ic_launcher" />
+
+                <RelativeLayout
+                    android:id="@+id/sepp"
+                    android:layout_width="1dip"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dip"
+                    android:layout_toRightOf="@+id/Icon_home"
+                    android:background="@drawable/header_sep" >
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0px"
+                android:layout_height="50dip"
+                android:layout_weight="1" >
+
+                <RelativeLayout
+                    android:id="@+id/layout_request"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dip"
+                    android:layout_alignParentRight="true"
+                    android:visibility="visible" >
+
+                    <ImageView
+                        android:id="@+id/Icon_request_request"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="10dip"
+                        android:background="@drawable/request" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_edit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dip"
+                    android:layout_alignParentRight="true"
+                    android:visibility="invisible" >
+
+                    <ImageView
+                        android:id="@+id/Icon_layout_edit"
+                        android:layout_width="15dip"
+                        android:layout_height="15dip"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dip"
+                        android:layout_toLeftOf="@+id/text_layout_edit"
+                        android:background="@drawable/edit_terminer" />
+
+                    <TextView
+                        android:id="@+id/text_layout_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="11dip"
+                        android:text="Done"
+                        android:textColor="#D1D1D1"
+                        android:textSize="15dip"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_edit_edit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dip"
+                    android:layout_alignParentRight="true"
+                    android:visibility="invisible" >
+
+                    <ImageView
+                        android:id="@+id/Icon_list_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="11dip"
+                        android:background="@drawable/edit_list" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <com.viewpagerindicator.TabPageIndicator
+            android:id="@+id/indicator"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/swipey_tabs_height"
+            android:background="@drawable/bg_opacity" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="1" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2dip" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

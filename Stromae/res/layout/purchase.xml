@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#282828" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/fuck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dip"
+            android:text="Is the app useful ?"
+            android:textColor="#33B5E5"
+            android:textSize="25dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="2.5dip"
+        android:layout_below="@id/top"
+        android:background="#00b1e7" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/MSG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/separator"
+        android:layout_margin="15dip" >
+
+        <TextView
+            android:id="@+id/MSG1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Do you like Lil Wayne application ?"
+            android:textColor="#CCCCCC"
+            android:textSize="16dip" />
+
+        <TextView
+            android:id="@+id/MSG2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/MSG1"
+            android:layout_marginTop="20dip"
+            android:text="\nyou can support  it by voting on google play market. Thank You :) "
+            android:textColor="#CCCCCC"
+            android:textSize="16dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/separator2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_below="@+id/MSG"
+        android:background="#CCCCCC" >
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_below="@+id/separator2"
+        android:background="#CCCCCC"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/btn1"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="0.1dip"
+            android:layout_weight="1"
+            android:background="#282828" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="No, not now"
+                android:textColor="#CCCCCC"
+                android:textSize="13dip" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn2"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="0dip"
+            android:layout_weight="1"
+            android:background="#282828" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Yes, I&apos;ll support"
+                android:textColor="#CCCCCC"
+                android:textSize="13dip" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     android:id="@+id/MainContainer"
+     android:background="@drawable/audamob_version_deux_bg_blur" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:id="@+id/Create"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/selector" >
+
+            <TextView
+                android:id="@+id/CreateNewPlaylist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:textColor="@color/flat_clouds"
+                android:textSize="17sp" 
+                android:layout_marginLeft="20dp"
+                android:text="Create new Playlist"/>
+        </RelativeLayout>
+		  <ListView
+            android:id="@+id/ListView_playist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Create"
+           android:layout_above="@+id/Done"
+            android:divider="@color/blue"
+            android:dividerHeight="0dp" />
+        
+    </RelativeLayout>
+
+</RelativeLayout>

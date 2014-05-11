@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/audamob_version_deux_bg_blur" >
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+         >
+
+      
+            <RelativeLayout
+                android:id="@+id/L_player"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+              
+                >
+
+                <com.google.android.youtube.player.YouTubePlayerView
+                    android:id="@+id/player"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true" 
+                    android:layout_marginLeft="10dp"
+                    />
+            </RelativeLayout>
+        
+
+        <LinearLayout
+            android:id="@+id/other_views"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+           
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2"
+           
+            android:orientation="vertical"
+            android:padding="5dp" >
+			<RelativeLayout 
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+			    >
+			    <RelativeLayout 
+			        android:layout_width="1dp"
+			        android:layout_height="match_parent"
+			        android:background="@color/separator_color"
+			        android:id="@+id/sep"
+			      
+			        >
+			        
+			        
+			    </RelativeLayout>
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+               android:layout_toRightOf="@+id/sep"
+                android:layout_centerInParent="true"
+                 android:layout_marginLeft="10dp"
+                
+                android:scrollbars="none" >
+
+                <TextView
+                    android:id="@+id/TextLyrics"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="15dp"
+                    android:textColor="@color/flat_clouds"
+                    android:textSize="17dp" />
+            </ScrollView>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

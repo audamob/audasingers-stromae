@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="blue">#00b1e7</color>
+    <color name="white">#ffffff</color>
+    <color name="black_theme">#000000</color>
+    <color name="theme_bleu">#255254</color>
+     <color name="theme_bleu1">#C6CFC0</color>
+        <color name="theme_bleu2">#596E62</color>
+    <color name="theme_bleu_trans">#CC255254</color>
+
+    
+    <!-- Flat Color  -->
+	
+	<color name="flat_turquoise">#1ABC9C</color>
+	<color name="flat_emerland">#2ECC71</color>
+	<color name="flat_peter_river">#3498DB</color>
+	<color name="flat_peter_river_trans">#8A3498DB</color>
+	<color name="flat_amethyst">#9B59B6</color>
+	<color name="flat_wet_asphalt">#34495E</color>
+	<color name="flat_green_sea">#16A085</color>
+	<color name="flat_nephritis">#27AE60</color>
+	<color name="flat_belize_hole">#2980B9</color>
+	<color name="flat_wisteria">#8E44AD</color>
+	<color name="flat_midnight_blue">#2C3E50</color>
+	<color name="flat_sun_flower">#F1C40F</color>
+	<color name="flat_carrot">#E67E22</color>
+	<color name="flat_alizarin">#E74C3C</color>
+	<color name="flat_clouds">#ECF0F1</color>
+	<color name="flat_concrete">#95A5A6</color>
+	<color name="flat_orange">#F39C12</color>
+	<color name="flat_pumpkin">#ec5e00</color>
+	<color name="flat_pomegranate">#C0392B</color>
+	<color name="flat_silver">#BDC3C7</color>
+	<color name="flat_asbestos">#7F8C8D</color>
+	<color name="flat_clouds_tranparent">#FFFFFFFF</color>
+	<color name="flat_orange_transparent">#AFF39C12</color>
+	<color name="flat_color_bg">#9B7E7B</color>
+	<color name="flat_white">#ffffff</color>
+	<color name="flat_white_2">#D1D1D1</color>
+	<color name="flat_sep">#FFCCCCCC</color>
+	<color name="flat_transparent">#0Dffffff</color>
+	<color name="flat_action_bar">#0E1415</color>
+	
+	<!-- New Design version 2 -->
+	<color name="graphical_charte">#18A7C7</color>
+	<color name="separator_color">#D1D0D0</color>
+	<color name="transparent">#00000000</color>
+	
+	
+</resources>

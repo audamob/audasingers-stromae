@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="1.5" >
+
+            <RelativeLayout
+                android:id="@+id/sep"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#00b1e7" >
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/webLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/sep"
+                android:background="#DF000000"
+                android:padding="1dip" >
+
+                <WebView
+                    android:id="@+id/VideoYoutube"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:padding="10dip"
+                    android:scrollbars="none" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

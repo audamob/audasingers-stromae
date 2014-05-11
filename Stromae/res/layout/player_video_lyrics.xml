@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/TOP"
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="2.5" >
+
+            <RelativeLayout
+                android:id="@+id/contentLayoutHeader"
+                android:layout_width="fill_parent"
+                android:layout_height="65dip"
+                android:layout_marginTop="2dip" >
+
+                <ImageView
+                    android:id="@+id/iconvideo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:background="@drawable/iconvideo" />
+
+                <TextView
+                    android:id="@+id/NameSong"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="65dip"
+                    android:layout_toLeftOf="@+id/Favorites"
+                    android:layout_toRightOf="@+id/iconvideo"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="10dip"
+                    android:textColor="@color/blue"
+                    android:textSize="15dip"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/Share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dip"
+                    android:layout_toLeftOf="@+id/Favorites"
+                    android:background="@drawable/share" />
+
+                <ImageView
+                    android:id="@+id/Favorites"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dip"
+                    android:background="@drawable/nfavorite" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_alignParentBottom="true"
+                    android:background="#00b1e7" >
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/MobFox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contentLayoutHeader"
+                android:layout_centerHorizontal="true" >
+            </RelativeLayout>
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/MobFox"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="5dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:scrollbars="none" >
+
+                <TextView
+                    android:id="@+id/TextLyrics"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textColor="#8F000000"
+                    android:textSize="13dip"
+                    android:textStyle="bold" />
+            </ScrollView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="1.5" >
+
+            <RelativeLayout
+                android:id="@+id/sep"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#00b1e7" >
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/webLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/sep"
+                android:background="#DF000000"
+                android:padding="1dip" >
+
+                <WebView
+                    android:id="@+id/VideoYoutube"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:padding="10dip"
+                    android:scrollbars="none" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
