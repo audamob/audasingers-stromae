@@ -1,0 +1,200 @@
+<resources>
+    <string name="app_name">Stromae</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_home">Home</string>
+	<string name="singer_name">Stromae</string>
+    <string name="app_version">1.0.0</string>
+    <string name="singer_twitter_username">Stromae</string>
+	 
+	 <string name="tab_videos">Videos</string>
+	 	<string name="tab_videos_contact">You want to add a new video ? Just contact us :)</string>
+	 <string name="tab_favorites">Favorites</string>
+	
+	 <string name="tab_Musics">Musics</string>
+	 	<string name="tab_Musics_contact">You want to add a new song ? Just contact us :)</string>
+	 
+	 <string name="tab_playlists">Playlists</string>
+	    <string name="tab_playlists_playlist_name">Playlist Name</string>
+	    <string name="tab_playlists_new_playlist_name">New Playlist Name</string>
+	    <string name="tab_playlists_default_playlist">Default Playlist</string>
+	    <string name="tab_playlists_delete_all">Delete All</string>
+	    <string name="tab_playlists_done">Done</string>
+	 
+	 <string name="tab_lyrics">Lyrics</string>
+	   <string name="tab_lyrics_song_nme">Song Name</string>
+	   <string name="tab_lyrics_album_name">Album Name</string> 
+	 
+	 <string name="tab_News">News</string>
+	 
+	 <string name="tab_tweets">Tweets</string>
+	 
+	 <string name="tab_bio">Biography</string>
+	   <string name="tab_bio_biolil">
+	     
+	    Stromae is a Belgian vocalist, songwriter, and producer whose music combines hiphop flavors with the cool, \n\n\n
+	    
+	    polished rhythms of house and other varieties of electronic dance music; he\'s also known for his clean-cut \n\n\n
+	    
+	    look and trademark bow tie. Stromae was born Paul van Haver in Brussels on March 12, 1985. Van Haver\'s \n\n\n
+	    
+	     father, from Rwanda, left the family when he was young and he rarely saw him; his was raised by his Belgian\n\n\n
+	    
+	     mother and developed an interest in music at an early age. When he was 11, Van Haver became  \n\n\n
+	    
+	    a student at L\'Académie Musicale de Jette, and started playing the drums. In 2005, he took up rap music, \n\n\n 
+	    
+	    and after briefly performing as Opmaestro, he took the stage name Stromae (an anagram for "Maestro") \n\n\n
+	    
+	    and launched a short-lived hip-hop combo named Suspicion. By 2007, Stromae was back to working  \n\n\n
+	    
+	    as a solo act, and he recorded his first single, "Juste un Cerveau, un Flow, un Fond et un Mic ..." \n\n\n
+	    
+	    It was in 2009 that he got his real big break -- while working at a Belgian radio station, he created  \n\n\n
+	    
+	    the song "Alors on Dance" using his home recording setup, and the manager of the station was impressed  \n\n\n
+	    
+	    enough with the track to play it on air. Response from listeners was enthusiastic, and Stromae struck  \n\n\n
+	    
+	    a deal with Polygram Records: "Alors on Dance" became a number one hit in Belgium, and went on to repeat \n\n\n
+	    
+	    that success in a dozen countries, including Germany, France, Italy, Switzerland, Greece, and Denmark.  \n\n\n
+	    
+	    As "Alors on Dance" climbed the charts across Europe and Stromae\'s videos became a sensation on YouTube, \n\n\n
+	    
+	    he released his first album, Cheese, in 2010. In August 2010, Stromae\'s career got a major boost in the United \n\n\n
+	    
+	    States when Kanye West collaborated with him on a remix of "Alors on Dance," featuring a guest rap from West.\n\n\n
+	    
+	     ~ Mark Deming, Rovi\n\n\n
+	     
+	     
+	 </string>
+	 
+	 <string name="tab_more">More</string>
+	   <string name="tab_more_shows">SHOWS</string>
+	   <string name="tab_more__store">STORE</string>
+	   <string name="tab_more_facebook">FACEBOOK</string>
+	   <string name="tab_more_twitter">TWITTER</string> 
+	   <string name="tab_more_website">WEBSITE</string>
+	   <string name="tab_more_follow_us">FOLLOW US</string>
+	 
+	
+    
+     <string name="donate_title">Support us in 10 sec ;)</string> 
+	 <string name="donate_t1">You can Help us to still give you nice application in 3 step</string> 
+	 <string name="donate_t2">\n1 : Click on yes
+	     					  \n2 : Install the application / game from market
+	     					  \n3 : Open it
+	     					  \nThanks for your help, now you can uninstall the downloaded application/game
+	     					  if you dont like it :))  </string> 
+	 <string name="donate_no">No, maybe later</string> 
+	 <string name="donate_yes">Yes</string> 
+	    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+	    <string name="enter_fullscreen">Enter Fullscreen</string>
+    <string name="landscape_fullscreen">Always fullscreen in landscape</string>
+	     <string name="fullscreen_tutorial">This is a demo which shows how to handle fullscreen behaviour. This activity has differents layouts for portrait, landscape and fullscreen. The user can enter fullscreen either by using the player controller or programmatically by the programmer (here using a button). If your activity does not have a landscape layout, you can choose to automatically enter fullscreen when the device is rotated to landscape orientation.</string>
+ 
+	     
+	     
+    <string name="title_activity_who_to_follow">WhoToFollowActivity</string>
+    <string name="title_activity_test__aymen_2">Test_Aymen_2</string>
+    <string name="Sign_In_Google_Plus">Sign in with google plus</string>
+    <string name="Sign_In_Facebook">Sign in with facebook</string>
+    <string name="loading_text">Initialisation...</string>
+    <string name="connection_text">Connection...</string>
+    <string name="View_Profile_text">View Profile</string>
+    <string name="Nearby_text">Nearby</string>
+    <string name="To_Do_text">To do</string>
+    <string name="In_Progress_text">In progress</string>
+    <string name="Done_text">Done</string>
+    <string name="Profile_text">Profile</string>
+    <string name="Settings_text">About Us</string>
+    <string name="Video_text">Videos</string>
+    <string name="Video_Favorites_text">Favorites</string>
+    
+    <string name="Music_text">Musics</string>
+    <string name="Music_Playlist_text">Playlist</string>
+    <string name="Lyrics_text">Lyrics</string>
+    <string name="News_text">News</string>
+    <string name="NewsMTV_text">MTV News</string>
+    <string name="Tweets_text">Tweets</string>
+     <string name="Bio_text">Biography</string>
+    <string name="Followers_number"> Followers</string>
+    <string name="Suggestion_Text"> Suggestions</string>
+    <string name="Categorie_Text"> Categories</string>
+   
+    <string name="Details_Text"> Details</string>
+    <string name="Posts_Text"> Posts</string>
+    <string name="Follow"> Do it</string>
+    <string name="Follower_Text"> Followers</string>
+    <string name="Followers"> Followers</string>
+     <string name="Logout_Text"> Log Out</string>
+    
+    
+    <!-- Content Description -->
+    <string name="profile"> profile</string>
+    
+
+    <!--  -->
+    <string name="change_locale">Change Locale</string>
+    <string name="list_moments_title">Touch a moment to delete</string>
+    <string name="send_interactive_button_name">Send Interactive Post</string>
+    <string name="sign_out_button_name">Sign out</string>
+    <string name="revoke_access_button_name">Revoke access</string>
+    <string name="share_title">Prefill Text (optional)</string>
+    <string name="share_prefill_text">Welcome to the Google+ platform.</string>
+    <string name="default_status" />
+    <string name="greeting_status">Welcome, %s.</string>
+    <string name="greeting_status_sign_in_required">Sign-in required</string>
+    <string name="greeting_status_error">Error signing in: %s.</string>
+    <string name="loading_status">Loading…</string>
+    <string name="signing_in_status">Signing in with Google+.</string>
+    <string name="signed_in_status">Signed in as \"%s\".</string>
+
+    <!-- Used if there was an error loading the signed in user's name. -->
+    <string name="unknown_person">Unknown</string>
+    <string name="signed_out_status">Signed out.</string>
+    <string name="revoke_access_status">Revoked access.</string>
+    <string name="revoke_access_error_status">Unable to revoke access.</string>
+    <string name="plus_write_moment_status">Saving moment</string>
+    <string name="plus_remove_moment_status">Removing moment</string>
+    <string name="plus_one_small_name">Small +1 button</string>
+    <string name="plus_one_medium_name">Medium +1 button</string>
+    <string name="plus_one_tall_name">Tall +1 button</string>
+    <string name="plus_one_standard_name">Standard +1 button</string>
+    <string name="plus_one_standard_ann_name">Standard +1 button (with inline annotation)</string>
+    <string name="plus_example_deep_link_id">/+/mobile/android/</string>
+    <string name="plus_example_deep_link_url">        https://developers.google.com/+/mobile/android/
+</string>
+    <string name="plus_generic_error">Sign in with Google is not available.</string>
+    <string name="progress_message">Signing in to Google&#8230;</string>
+    <string name="empty_string"></string>
+    <string name="first_title">Sliding menu from XML</string>
+    <string name="second_title">Stromae</string>
+    <string name="contact_email">andrius.baruckis@gmail.com</string>
+    <string name="contact_email_subject">Sliding Menu Implementation Example feedback</string>
+    <string name="source_code_repository_link">https://github.com/baruckis/Android-SlidingMenuImplementation</string>
+    <string name="tutorial_title">SLIDING MENU IMPLEMENTATION EXAMPLE</string>
+    <string name="first_frame_title_label">SLIDING MENU FROM XML</string>
+    <string name="first_frame_subtitle_label">Menu content is a list fragment filled with data loaded from XML file.</string>
+    <string name="second_frame_title_label">SLIDING MENU FROM CLASS</string>
+    <string name="second_frame_subtitle_label">Menu content is a list fragment filled with data loaded from a class.</string>
+    <string name="textview_top_left_label_for_xml">Press on the up icon to hide sliding out menu if it is visible, or to go back to previuos screen.</string>
+    <string name="textview_left_label_for_xml">Swipe with the finger to slide out menu from the left side.</string>
+    <string name="textview_top_left_label_for_class">Press on the icon to show or hide sliding out menu.</string>
+    <string name="textview_left_label_for_class">Swipe with the finger to slide out menu from the left side.</string>
+ 
+
+    <!-- MENU -->
+    <string name="menu_github_short">GitHub</string>
+    <string name="menu_github_long">Source on GitHub</string>
+    <string name="menu_about_short">About</string>
+    <string name="menu_about_long">About this app</string>
+    <string name="menu_contact_short">Contact</string>
+    <string name="menu_contact_long">Contact developer</string>
+    
+    <!-- New Version Strings -->
+    <string name="audasigners_text">audasigners</string>
+	 
+</resources>
