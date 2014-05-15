@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="70dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3" >
+
+                    <EditText
+                        android:id="@+id/searchedit"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dip"
+                        android:layout_margin="10dip"
+                        android:hint="Song Name"
+                        android:padding="5dip"
+                        android:textColor="#C2C2C2"
+                        android:textColorHint="#D1D1D1"
+                        android:textSize="17dip" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3" >
+
+                    <EditText
+                        android:id="@+id/searcheditAlbum"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dip"
+                        android:layout_margin="10dip"
+                        android:hint="Album Name"
+                        android:padding="5dip"
+                        android:textColor="#C2C2C2"
+                        android:textColorHint="#D1D1D1"
+                        android:textSize="17dip"
+                         />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/ListAppl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/search"
+            android:divider="@color/blue"
+            android:dividerHeight="0dip" />
+    </RelativeLayout>
+
+</RelativeLayout>

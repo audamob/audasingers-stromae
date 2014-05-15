@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/MainContainer"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@drawable/audamob_version_deux_bg_blur" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/dialog"
+            android:layout_width="fill_parent"
+            android:layout_height="80dip"
+            android:layout_margin="10dip" >
+
+            <TextView
+                android:id="@+id/dialogMsg"
+                android:layout_width="match_parent"
+                android:layout_height="70dip"
+                android:layout_margin="10dip"
+                android:hint="Playlist Name"
+                android:padding="5dip"
+                android:textColor="#C2C2C2"
+                android:textColorHint="#D1D1D1"
+                android:textSize="17dip" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Done"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_below="@+id/dialog"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dip"
+            android:paddingLeft="30dip"
+            android:paddingRight="30dip" >
+
+            <TextView
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layout_audamob_version_deux_selector"
+                android:padding="5dp"
+                android:text="Cancel"
+                android:textColor="@color/flat_clouds"
+                android:textSize="17dip" />
+
+            <TextView
+                android:id="@+id/ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/cancel"
+                android:background="@drawable/layout_audamob_version_deux_selector"
+                android:padding="5dp"
+                android:text="Ok"
+                android:textColor="@color/flat_clouds"
+                android:textSize="17dip" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

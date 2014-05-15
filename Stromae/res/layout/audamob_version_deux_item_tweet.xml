@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/MainContainer"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/LayoutTaxt"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/layout_audamob_version_deux_selector" >
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/flat_peter_river_trans"
+            android:padding="10dp" >
+
+            <RelativeLayout
+                android:id="@+id/L_t_1"
+                android:layout_width="80dp"
+                android:layout_height="80dp" >
+
+                <ImageView
+                    android:id="@+id/Icon"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_Name_tweet_Owner_t"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@+id/L_t_1" >
+
+                <TextView
+                    android:id="@+id/NameSinger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lil Wayne"
+                    android:textColor="#CCC"
+                    android:textColorLink="@color/blue"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/Name_tweet_Owner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/NameSinger"
+                    android:text="LilTunechi"
+                    android:textColor="#D1D1D1"
+                    android:textSize="15dp"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/L_t_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header"
+            android:layout_marginLeft="10dp"
+           >
+
+            <RelativeLayout
+                android:id="@+id/L_t_3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="5dp" >
+
+                <RelativeLayout
+                    android:id="@+id/layout_Name_tweet_Owner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <RelativeLayout
+                        android:id="@+id/layout_tweet_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp" >
+
+                        <TextView
+                            android:id="@+id/tweet_state"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text=""
+                            android:textColor="@color/blue"
+                            android:textSize="11dp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/Name_tweet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout_Name_tweet_Owner"
+                    android:autoLink="web"
+                    android:linksClickable="true"
+                    android:text="salut dcazcd  zdcaz  "
+                    android:textColor="@color/flat_clouds"
+                    android:textColorLink="@color/blue"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/L_t_4"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_below="@+id/L_t_3"
+                android:paddingRight="10dp" >
+
+                <ImageView
+                    android:id="@+id/Icon_twitter"
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/audamob_version_deux_twitter" />
+
+                <TextView
+                    android:id="@+id/Number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/Icon_twitter"
+                    android:text="salut dcazcd  zdcaz  "
+                    android:textColor="#444444"
+                    android:textColorLink="@color/blue"
+                    android:textSize="13dp"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

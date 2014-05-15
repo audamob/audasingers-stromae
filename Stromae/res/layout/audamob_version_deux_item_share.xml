@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="100dip"
+    android:background="#00000000"
+    android:padding="10dip" >
+
+    <RelativeLayout
+        android:id="@+id/Layouticonnn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true" >
+
+        <ImageView
+            android:id="@+id/IconAPp"
+            android:layout_width="30dip"
+            android:layout_height="30dip" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/namAPp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:layout_toRightOf="@+id/Layouticonnn"
+        android:text="salut"
+        android:textColor="#FFFFFF"
+        android:textSize="17dip"
+        android:textStyle="normal" />
+
+</RelativeLayout>

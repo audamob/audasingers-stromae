@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ItemSong"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/music_item_height"
+    android:layout_marginRight="10dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/music_item_selector_height"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/layout_audamob_version_deux_selector" >
+
+        <RelativeLayout
+            android:id="@+id/Layouticon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:id="@+id/Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                android:src="@drawable/audamob_version_deux_music" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/LayoutTaxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left_music_icon_text"
+            android:layout_toRightOf="@+id/Layouticon" >
+
+            <TextView
+                android:id="@+id/nam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="salut   azcdf  zd  "
+                android:textColor="@color/flat_clouds"
+                android:textSize="@dimen/music_item_text_size"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/Number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nam"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="30dp"
+                android:text="00:00"
+                android:textColor="@color/flat_clouds"
+                android:textSize="11dp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp" >
+
+            <RelativeLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/weight_music_layout" >
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/layout_audamob_version_deux_notif_bg"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp" >
+
+                        <RelativeLayout
+                            android:id="@+id/r_checkbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <CheckBox
+                                android:id="@+id/checkbox"
+                                android:layout_width="20dp"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true"
+                                android:button="@drawable/layout_audamob_version_deux_checkbox" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/nbrPlaylistsTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="2dp"
+                            android:layout_toRightOf="@+id/r_checkbox"
+                            android:text="15k"
+                            android:textColor="@color/separator_color"
+                            android:textSize="@dimen/textsize_music_item_play" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/layout_audamob_version_deux_notif_bg"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp" >
+
+                        <ImageView
+                            android:id="@+id/play"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            
+                            android:src="@drawable/audamob_version_deux_nombre_lecture" />
+
+                        <TextView
+                            android:id="@+id/nbrPlay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/play"
+                            android:text="90k"
+                            android:textColor="@color/separator_color"
+                            android:textSize="@dimen/textsize_music_item_play" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0px"
+                    android:layout_height="25dp"
+                    android:layout_weight="1" >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/layout_audamob_version_deux_notif_bg" >
+
+                        <ImageView
+                            android:id="@+id/partager"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/separator"
+                            android:background="@drawable/layout_audamob_version_deux_notif_bg"
+                            android:padding="3dp"
+                            android:src="@drawable/audamob_version_deux_partager" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

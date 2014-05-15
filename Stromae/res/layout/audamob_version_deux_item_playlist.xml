@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+   >
+
+    <RelativeLayout
+        android:id="@+id/ItemSong"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/layout_audamob_version_deux_selector" >
+
+        <RelativeLayout
+            android:id="@+id/Layouticon"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            >
+
+            <ImageView
+                android:id="@+id/logoicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                android:src="@drawable/audamob_version_deux_plist" >
+            </ImageView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/Layouticon" >
+
+            <TextView
+                android:id="@+id/nam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="salut"
+                android:textColor="@color/flat_clouds"
+                android:textSize="20dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/Number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nam"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="30dp"
+                android:text="salut dcazcd  zdcaz  "
+                 android:textColor="@color/flat_clouds"
+                android:textSize="11dp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,313 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MainContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="0dp"
+            android:scrollbars="none" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="40dp" >
+
+                <RelativeLayout
+                    android:id="@+id/MARKETPLACE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/audamob_version_deux_audamob_settings"
+                     >
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/Show_us"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="Show us love"
+                    android:textColor="@color/flat_silver"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/MARKETPLACE" />
+
+                <RelativeLayout
+                    android:id="@+id/Show_us_sep"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/Show_us"
+                    android:layout_marginTop="10dp" >
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/VOTE"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Show_us_sep"
+                    android:background="@drawable/layout_audamob_version_deux_selector_seting"
+                    android:padding="10dp" >
+
+                    <ImageView
+                        android:id="@+id/icon_playstore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/audamob_version_deux_ic_play_store" />
+
+                    <TextView
+                        android:id="@+id/text_playstore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@+id/icon_playstore"
+                        android:text="Rate us on Google Play"
+                        android:textColor="@color/flat_silver"
+                        android:textSize="18dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/Vote_sep"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/VOTE" >
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/DONNATE"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Vote_sep"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/layout_audamob_version_deux_selector_seting"
+                    android:padding="10dp" >
+
+                    <ImageView
+                        android:id="@+id/icon_donnate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/logo_audamob_version_deux__settings" />
+
+                    <TextView
+                        android:id="@+id/text_donnate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@+id/icon_donnate"
+                        android:text="Get the donnate version"
+                        android:textColor="@color/flat_silver"
+                        android:textSize="18dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/Donnate_sep"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/DONNATE" >
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/Follow_us"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Donnate_sep"
+                    android:layout_marginTop="30dp"
+                    android:text="Follow us"
+                    android:textColor="@color/flat_silver"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/Follow_us_sep"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/Follow_us"
+                    android:layout_marginTop="10dp" >
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/TWITTER"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Follow_us_sep"
+                    android:background="@drawable/layout_audamob_version_deux_selector_seting"
+                    android:padding="10dp" >
+
+                    <ImageView
+                        android:id="@+id/icon_twitter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/audamob_version_deux_ic_twitter_settings" />
+
+                    <TextView
+                        android:id="@+id/text_twitter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@+id/icon_twitter"
+                        android:text="Follow us on Twitter"
+                        android:textColor="@color/flat_silver"
+                        android:textSize="18dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/Twitter_sep"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/TWITTER" >
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/FACEBOOK"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Twitter_sep"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/layout_audamob_version_deux_selector_seting"
+                    android:padding="10dp" >
+
+                    <ImageView
+                        android:id="@+id/icon_fb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/audamob_version_deux_ic_facebook_settings" />
+
+                    <TextView
+                        android:id="@+id/text_twitter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@+id/icon_fb"
+                        android:text="Follow us on Facebook"
+                        android:textColor="@color/flat_silver"
+                        android:textSize="18dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/Facebook_sep"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/FACEBOOK" >
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/CONTACT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Facebook_sep"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/layout_audamob_version_deux_selector_seting"
+                    android:padding="10dp" >
+
+                    <ImageView
+                        android:id="@+id/icon_contact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/audamob_version_deux_contact_settings" />
+
+                    <TextView
+                        android:id="@+id/text_contact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@+id/icon_contact"
+                        android:text="Contact"
+                        android:textColor="@color/flat_silver"
+                        android:textSize="18dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/Contact_sep"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/CONTACT" >
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/About"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Contact_sep"
+                    android:layout_marginTop="50dp"
+                    android:text="About us"
+                    android:textColor="@color/flat_silver"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/About_sep"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/About"
+                    android:layout_marginTop="10dp" >
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/VERSIONS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/About_sep"
+                    android:background="@drawable/layout_audamob_version_deux_selector_seting"
+                    android:padding="10dp" >
+
+                    <ImageView
+                        android:id="@+id/icon_lilwayne"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/logo_audamob_version_deux__settings" />
+
+                    <TextView
+                        android:id="@+id/text_playstore_developer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@+id/version"
+                        android:layout_toRightOf="@+id/icon_lilwayne"
+                        android:text="Version"
+                        android:textColor="@color/flat_silver"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/version"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="5.0.3"
+                        android:textColor="#444"
+                        android:textSize="18dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/marketplace_sep"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/VERSIONS" >
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

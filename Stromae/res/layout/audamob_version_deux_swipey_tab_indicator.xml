@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipey_tab"
+    android:layout_width="wrap_content"
+    android:layout_height="40dip"
+    android:background="@drawable/layout_audamob_version_deux_swipey_tab_indicator"
+    android:ems="5"
+    android:focusable="true"
+    android:paddingLeft="17dip"
+    android:paddingRight="17dip"
+    android:singleLine="true"
+    android:textSize="20dip" />

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/ListAppPLL"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:divider="@color/blue"
+            android:dividerHeight="0dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/EmptyPlaylistsMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/layout_audamob_version_deux_selector"
+        android:visibility="invisible" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal"
+            android:text="Your Playlists is empty !"
+            android:textColor="@color/flat_clouds"
+            android:textSize="@dimen/music_item_text_size"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+</RelativeLayout>

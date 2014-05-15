@@ -1,0 +1,200 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MainContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/audamob_version_deux_bg_blur" >
+
+    <RelativeLayout
+        android:id="@+id/sweipy_simulation"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/header"
+        android:layout_margin="10dp"
+        android:background="@drawable/layout_audamob_version_deux_selector" >
+
+        <TextView
+            android:id="@+id/NameSong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:lines="1"
+            android:text=""
+            android:textColor="@color/flat_clouds"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/Player"
+        android:layout_below="@+id/sweipy_simulation" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="1dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                
+                
+                android:background="@drawable/layout_audamob_version_deux_selector"
+               >
+
+                <TextView
+                    android:id="@+id/TextLyrics"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="5dp"
+                    android:padding="10dp"
+                    android:textColor="@color/flat_clouds"
+                    android:textSize="15dp" 
+                    />
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Player"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp" >
+
+        
+
+        <ImageView
+            android:id="@+id/replay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/audamob_version_deux_progress_player_1" />
+
+        <RelativeLayout
+            android:id="@+id/PlayerSeekBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:layout_below="@+id/replay" >
+
+            <SeekBar
+                android:id="@+id/PlayerSeekBar"
+                android:layout_width="fill_parent"
+                android:layout_height="10dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="0dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:progressDrawable="@drawable/layout_audamob_version_deux_searchbg"
+                android:secondaryProgress="100"
+                android:thumb="@drawable/audamob_version_deux_img_scrubber_dot"
+                android:thumbOffset="0dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/SeekStartTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/PlayerSeekBarLayout"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:text="00:00"
+            android:textColor="#FFFFFF"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/SeekDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/PlayerSeekBarLayout"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:text="00:00"
+            android:textColor="#FFFFFF"
+            android:textSize="13dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SeekStartTime"
+            android:layout_centerHorizontal="true" >
+
+            <RelativeLayout
+                android:id="@+id/Previous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true" >
+
+                <ImageView
+                    android:id="@+id/Previeous"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/audamob_version_deux_previous_enable" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                android:layout_toRightOf="@+id/Previous"
+                 android:layout_centerVertical="true"
+                 android:layout_marginLeft="10dp" 
+                 android:layout_marginRight="10dp">
+
+                <ImageView
+                    android:id="@+id/Play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/audamob_version_deux_play_desable"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/Pause"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/audamob_version_deux_pause_desable"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/layoutplay" 
+                 android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/Next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/audamob_version_deux_next_enable" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/Progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/audamob_version_deux_progres1" />
+
+</RelativeLayout>
