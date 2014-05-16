@@ -42,7 +42,7 @@
                     android:id="@+id/NameSinger"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Lil Wayne"
+                    android:text="@string/singer_name"
                     android:textColor="#CCC"
                     android:textColorLink="@color/blue"
                     android:textSize="15dp"
@@ -53,7 +53,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/NameSinger"
-                    android:text="LilTunechi"
+                    android:text="@@string/singer_twitter_account"
                     android:textColor="#D1D1D1"
                     android:textSize="15dp"
                     />

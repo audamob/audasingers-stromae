@@ -18,6 +18,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.audamob.audasingers.stromae.R;
+import com.audamob.audasingers.stromae.constant.ApplicationConstants;
 import com.audamob.audasingers.stromae.model.Tweet;
 import com.audamob.audasingers.stromae.tool.view.ImageResizerUtils;
 import com.audamob.audasingers.stromae.tool.view.RoundedAvatarDrawable;
@@ -87,7 +88,7 @@ public class TweetsAdapter extends BaseAdapter {
 					@Override
 					public void onClick(View v) {
 						// TODO Auto-generated method stub
-						String url = "https://twitter.com/LilTunechi/";
+						String url = ApplicationConstants.TWITTER_URL;
 						final Intent intent = new Intent(Intent.ACTION_VIEW)
 								.setData(Uri.parse(url));
 						activity.startActivity(intent);
@@ -112,7 +113,7 @@ public class TweetsAdapter extends BaseAdapter {
 		if (listTweets.get(position).getState().length() > 0) {
 			holder.State.setText(listTweets.get(position).getState());
 		}
-		holder.nameArtist.setText("@LilTunechi");
+		holder.nameArtist.setText(ApplicationConstants.TWITTER_SINGER_ACCOUNT);
 		holder.Logo.setImageDrawable(rAvatar);
 		holder.id = position;
 
