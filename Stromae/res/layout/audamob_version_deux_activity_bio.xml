@@ -35,7 +35,7 @@
                     android:padding="10dp"
                     android:text="@string/tab_bio_biolil"
                     android:textColor="@color/flat_clouds"
-                    android:textSize="15dp"
+                    android:textSize="@dimen/text_size_bio"
                     android:textStyle="normal" />
             </RelativeLayout>
         </ScrollView>
