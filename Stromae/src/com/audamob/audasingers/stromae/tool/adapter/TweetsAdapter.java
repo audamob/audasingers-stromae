@@ -28,6 +28,7 @@ public class TweetsAdapter extends BaseAdapter {
 	private ArrayList<Tweet> listTweets;
 	private Activity activity;
 	private RoundedAvatarDrawable rAvatar;
+
 	public TweetsAdapter(Activity activity, ArrayList<Tweet> tweets) {
 		Log.d("TWEETS_1", "I am here AppAdapter");
 		this.activity = activity;
@@ -35,10 +36,10 @@ public class TweetsAdapter extends BaseAdapter {
 		mInflater = (LayoutInflater) activity
 				.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
-		this.rAvatar = new RoundedAvatarDrawable(
-				BitmapFactory.decodeResource(activity.getResources(), R.drawable.logo_audamob_version_deux_singer_tweet));
+		this.rAvatar = new RoundedAvatarDrawable(BitmapFactory.decodeResource(
+				activity.getResources(),
+				R.drawable.logo_audamob_version_deux_singer_tweet));
 
-		
 	}
 
 	public int getCount() {
@@ -58,12 +59,15 @@ public class TweetsAdapter extends BaseAdapter {
 		if (convertView == null) {
 			holder = new ViewHolderImage();
 
-			convertView = mInflater.inflate(R.layout.audamob_version_deux_item_tweet, null);
-			ViewGroup mainContainer=(ViewGroup)convertView.findViewById(R.id.MainContainer);
-    		Typeface font =Typeface.createFromAsset(activity.getAssets(), "ExoMedium.otf");
+			convertView = mInflater.inflate(
+					R.layout.audamob_version_deux_item_tweet, null);
+			ViewGroup mainContainer = (ViewGroup) convertView
+					.findViewById(R.id.MainContainer);
+			Typeface font = Typeface.createFromAsset(activity.getAssets(),
+					"ExoMedium.otf");
 
-    		ImageResizerUtils.setFont(activity, mainContainer, font);
-    		
+			ImageResizerUtils.setFont(activity, mainContainer, font);
+
 			holder.Logo = (ImageView) convertView.findViewById(R.id.Icon);
 			holder.Name_tweet = (TextView) convertView
 					.findViewById(R.id.Name_tweet);
