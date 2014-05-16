@@ -77,24 +77,7 @@ public class LyricsPage extends ActivityBase {
 		ViewGroup mainContainer = (ViewGroup) findViewById(R.id.MainContainer);
 		Typeface font = Typeface.createFromAsset(getAssets(), "ExoMedium.otf");
 		ImageResizerUtils.setFont(this, mainContainer, font);
-/*		ImageView share = (ImageView) findViewById(R.id.Share);
-		share.setOnClickListener(new OnClickListener() {
 
-			@Override
-			public void onClick(View vv) {
-				// TODO Auto-generated method stub
-
-				if (!PopUpOnshare) {
-				
-
-				} else {
-					PopUpShare.dismiss();
-					PopUpOnshare = false;
-
-				}
-			}
-		});
-*/
 		ThreadLoad threadLoad = new ThreadLoad(handlerLoad);
 		threadLoad.start();
 		UpdaterProgressThread p = new UpdaterProgressThread(progressHandler);
