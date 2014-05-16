@@ -12,64 +12,9 @@ public class DataSource {
 	public static ArrayList<Video> getListVideos() {
 		ArrayList<Video> ListVideo;
 		ListVideo = new ArrayList<Video>();
-		ListVideo.add(new Video("Mirror", 228000, "OZLUa8JUR18",32100,1099));
-		ListVideo.add(new Video("Drop the World", 229000, "ErCAOMi5EGM",689800,12119));
+		ListVideo.add(new Video("C'est Stromae", 247000, "AChnoHafrW0",32100,1099));
+		ListVideo.add(new Video("Up saw liz", 180000, "bD40dWsG6m8",689800,12119));
 
-		// ListVideo.add(new Video("She Will",306000,"RXudFSuhxtM"));
-		ListVideo.add(new Video("Lollipop", 246000, "2IH8tNQAzSs",232000,71199));
-		ListVideo.add(new Video("6 Foot 7 Foot", 250000, "c7tOAGY59uQ",11000,71199));
-		ListVideo.add(new Video("How to Love", 338000, "y8Gf4-eT3w0",52000,7899));
-		ListVideo.add(new Video("Right Above It", 276000, "H3F7sgd0ZgY",32000,7899));
-		ListVideo.add(new Video("Throw It Up", 399000, "oq4Qwh7Cmhk",32000,7899));
-		ListVideo.add(new Video("Let It Rock", 339000, "u0n4eMGXAyk",32000,7899));
-		ListVideo.add(new Video("Down", 331000, "oUbpGmR1-QM",32000,7899));
-		ListVideo.add(new Video("Make It Rain", 278000, "0lYDqsExIUU",32000,7899));
-		ListVideo.add(new Video("Duffle Bag Boy", 239000, "ZBx-M2oRBLg",32000,7899));
-		ListVideo.add(new Video("A Milli", 252000, "HKBQCUNTddU",32000,7899));
-		ListVideo.add(new Video("I Can Only Imagine", 235000, "TSNerxNwWtU",32000,7899));
-		ListVideo.add(new Video("Your Smile", 307000, "o5kSBmRNwcI",32000,7889));
-		ListVideo.add(new Video("I'm Into You", 240000, "IgLcQmlN2Xg",32000,7899));
-		ListVideo.add(new Video("Lock U Down", 241000, "T-ZTaMzIGGs",32000,7899));
-		ListVideo.add(new Video("Soldier", 245000, "qFJ3VKnwmJw",32000,7899));
-		ListVideo.add(new Video("Turn Off the light", 233000, "Vuj7mNRMgLg",32000,7899));
-		ListVideo.add(new Video("IM IN DA HOOD", 260000, "8OpFM7R9C54",32000,7899));
-		ListVideo.add(new Video("Fireman", 267000, "7y0ChoYgSek",32000,7899));
-		ListVideo.add(new Video("Money To Blow", 265000, "NjNBC4mC5y4",32000,7899));
-		ListVideo.add(new Video("Unstoppable", 233000, "NW40rfp7aoQ",32000,7899));
-		ListVideo.add(new Video("Every Girl", 306000, "QGzq2HQ2YRs",32000,7899));
-		ListVideo.add(new Video("Knockout", 249000, "RfYcOYMNuXM",32000,7899));
-		ListVideo.add(new Video("Shine", 245000, "zgTURw8ADD8",32000,7899));
-		ListVideo.add(new Video("Sweetest Girl", 305000, "sXJXLq1lN7U",32000,7899));
-		ListVideo.add(new Video("I can Transform", 233000, "kta9If-sP4s",32000,7899));
-		ListVideo.add(new Video("CAN'T BELIEVE IT", 273000, "kWBE0sQC5L8",32000,7899));
-		ListVideo.add(new Video("Respect My Conglomerate", 249000, "CHU3f6TU6TA",32000,7899));
-		ListVideo.add(new Video("Y.U. MAD", 200000, "8tyKBPmKi_M",32000,7899));
-		ListVideo.add(new Video("Look At Me Now", 223000, "8gyLR4NfMiI",32000,7899));
-		ListVideo.add(new Video("Single Again", 273000, "Bw7danH18sg",32000,7899));
-		ListVideo.add(new Video("Girls Around The World", 240000, "Xv29j4TQc10",32000,7899));
-		ListVideo.add(new Video("HYFR", 236000, "0KCWqnldEag",32000,7899));
-		ListVideo.add(new Video("My Life", 284000, "udxZ9zkDzpo",32000,7899));
-		ListVideo.add(new Video("I'm So Paid", 273000, "tnAbKuGss4Y",32000,7899));
-		ListVideo.add(new Video("So Good", 200000, "KhYBo6Qnf_8",32000,7899));
-		ListVideo.add(new Video("My Homies Still", 257000, "E_yVRZMFbLc",32000,7899));
-		ListVideo.add(new Video("Dirty Dancer", 256000, "vHJAUuicC0Q",32000,7899));
-		ListVideo.add(new Video("Revolver", 240000, "AuFs-6L9xlY",32000,7899));
-		ListVideo.add(new Video("Enough Of No Love", 290000, "zZcjylFE73M",32000,7899));
-		ListVideo.add(new Video("YM Salute", 316000, "2MIQ046HUpo",32000,7899));
-		ListVideo.add(new Video("Ball", 217000, "lJH0AvvpnyI",32000,7899));
-		ListVideo.add(new Video("Sweat", 304000, "E4z_FH2wiCg",32000,7899));
-		ListVideo.add(new Video("Stuntin' Like My Daddy", 269000, "L7MP0b4KH88",32000,7899));
-		ListVideo.add(new Video("I Am Not A Human Being", 237000, "daRhEOkUL1o",32000,7899));
-		ListVideo.add(new Video("John", 310000, "3fumBcKC6RE",32000,7899));
-		ListVideo.add(new Video("Stunt Like My Daddy", 289000, "3fumBcKC6RE",32000,7899));
-		ListVideo.add(new Video("Leather So Soft", 266000, "1Az2J7ONvWw",32000,7899));
-		ListVideo.add(new Video("Love Me", 265000, "KY44zvhWhp4",32000,7899));
-		ListVideo.add(new Video("Gonorrhea", 282000, "RqpKhxqNZG8",32000,7899));
-		//New Added Videos
-		ListVideo.add(new Video("No Love", 314000, "KV2ssT8lzj8",32000,7899));
-		ListVideo.add(new Video("We Alright", 321000, "8cyUSC8ZJKk",32000,7899));
-		ListVideo.add(new Video("Rich As Fuck", 233000, "Jx2raP3P3FQ",32000,7899));
-		ListVideo.add(new Video("Loyal", 270000, "JXRN_LkCa_o",32000,7899));
 		return ListVideo;
 	}
 	
