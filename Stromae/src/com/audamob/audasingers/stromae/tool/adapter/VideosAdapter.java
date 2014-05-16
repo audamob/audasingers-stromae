@@ -44,7 +44,6 @@ public class VideosAdapter extends BaseAdapter {
 	public static int SIMPLE_VIDEO_MODE = 1;
 	public static int SIMPLE_FAVORITES_MODE = 2;
 	private int mode;
-	
 
 	class ViewHolderImage {
 		YouTubeThumbnailView youtubeVideoMiniature;
@@ -60,7 +59,7 @@ public class VideosAdapter extends BaseAdapter {
 
 	public VideosAdapter(Activity activity, ArrayList<Video> listVideos,
 			int modeDisplay) {
-		
+
 		this.activity = activity;
 		this.ListVideo = listVideos;
 		mInflater = (LayoutInflater) activity
@@ -95,8 +94,8 @@ public class VideosAdapter extends BaseAdapter {
 		if (convertView == null) {
 			holder = new ViewHolderImage();
 
-			convertView = mInflater.inflate(R.layout.audamob_version_deux_item_video_custom,
-					null);
+			convertView = mInflater.inflate(
+					R.layout.audamob_version_deux_item_video_custom, null);
 
 			Typeface font = Typeface.createFromAsset(activity.getAssets(),
 					"ExoMedium.otf");
@@ -121,7 +120,7 @@ public class VideosAdapter extends BaseAdapter {
 			holder.youtubeVideoMiniature.setTag(position);
 			holder.youtubeVideoMiniature.initialize(
 					ApplicationConstants.DEVELOPER_KEY, listener);
-			holder.share=(ImageView)convertView.findViewById(R.id.partager);
+			holder.share = (ImageView) convertView.findViewById(R.id.partager);
 			convertView.setTag(holder);
 		} else {
 			holder = (ViewHolderImage) convertView.getTag();
@@ -153,8 +152,8 @@ public class VideosAdapter extends BaseAdapter {
 
 		}
 
-		if (mode == VideosAdapter.SIMPLE_VIDEO_MODE)
-			holder.checkbox.setVisibility(View.VISIBLE);
+		
+		holder.checkbox.setVisibility(View.VISIBLE);
 		holder.Name.setId(position);
 		holder.youtubeVideoDuration.setId(position);
 		holder.checkbox.setId(position);
@@ -165,26 +164,59 @@ public class VideosAdapter extends BaseAdapter {
 
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				CheckBox cb = (CheckBox) v;
-				int id = cb.getId();
+				if (mode == VideosAdapter.SIMPLE_FAVORITES_MODE) {
+					CheckBox cb = (CheckBox) v;
+					int id = cb.getId();
+					ArrayList<Video> allListe = new ArrayList<Video>();
+					try {
+						allListe = CacheReadWriter.restoreListVideos(activity);
+					} catch (Exception e) {
+					}
 
-				if (ListVideo.get(id).isFavorite()) {
-					cb.setChecked(false);
-					ListVideo.get(id).setFavorite(false);
+					for (Video video : allListe) {
+
+						if (video.getYoutubeURL().equalsIgnoreCase(
+								ListVideo.get(id).getYoutubeURL())) {
+							video.setFavorite(false);
+						}
+					}
+					try {
+
+						CacheReadWriter.sauvegardListVideos(allListe, activity);
+						ListVideo.clear();
+						ListVideo = CacheReadWriter
+								.restoreFavoriteList(activity);
+
+					} catch (Exception e) {
+						// TODO: handle exception
+					}
+
 				} else {
-					cb.setChecked(true);
-					ListVideo.get(id).setFavorite(true);
-				}
-				try {
-					CacheReadWriter.sauvegardListVideos(ListVideo, activity);
-				} catch (IOException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
+
+					// TODO Auto-generated method stub
+					CheckBox cb = (CheckBox) v;
+					int id = cb.getId();
+
+					if (ListVideo.get(id).isFavorite()) {
+						cb.setChecked(false);
+						ListVideo.get(id).setFavorite(false);
+					} else {
+						cb.setChecked(true);
+						ListVideo.get(id).setFavorite(true);
+					}
+					try {
+						CacheReadWriter
+								.sauvegardListVideos(ListVideo, activity);
+					} catch (IOException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
 				}
 			}
+
 		});
 		holder.share.setOnClickListener(new OnClickListener() {
-			
+
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
@@ -193,7 +225,10 @@ public class VideosAdapter extends BaseAdapter {
 				} catch (Exception e) {
 					// TODO: handle exception
 				}
-				MainContainerActivityTest.shareService=new ShareService(activity,ApplicationConstants.YOUTUBE_URL+ ListVideo.get(position).getYoutubeURL(), holder.share);
+				MainContainerActivityTest.shareService = new ShareService(
+						activity, ApplicationConstants.YOUTUBE_URL
+								+ ListVideo.get(position).getYoutubeURL(),
+						holder.share);
 			}
 		});
 		holder.checkbox.setChecked(ListVideo.get(position).isFavorite());
@@ -274,5 +309,4 @@ public class VideosAdapter extends BaseAdapter {
 		}
 	};
 
-	
 }

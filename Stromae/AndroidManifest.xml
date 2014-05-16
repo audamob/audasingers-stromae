@@ -207,7 +207,7 @@
             android:value="80042" />
         <meta-data
             android:name="HOME_BASE_ID"
-            android:value="819978" />
+            android:value="820237" />
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />
