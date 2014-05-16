@@ -21,8 +21,8 @@ public class DataSource {
 	public static ArrayList<Music> getListMusics() {
 		ArrayList<Music> musicList;
 		musicList = new ArrayList<Music>();
-		musicList.add(new Music("Mirror",
-				"http://r-f.wen9.org/MP3s/new5/Lil-Wayne_mirror.mp3",32000,7899,228000));
+		musicList.add(new Music("Papaoutai",
+				"http://mp3.shmidt.net/files_play/3b9c257a91c0c1440ebfc30829b138cb/mp3/S/Stromae/Stromae_-_Papaoutai_mp3.shmidt.net.mp3",32000,7899,228000));
 
 		musicList
 				.add(new Music(
