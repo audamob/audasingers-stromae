@@ -23,7 +23,7 @@ public class CacheReadWriter {
 	public static ArrayList<News> restore_News(Activity activity)
 			throws IOException, ClassNotFoundException {
 		FileInputStream fin = new FileInputStream(activity.getCacheDir()
-				.getAbsolutePath() + "/newsnews");
+				.getAbsolutePath() + ApplicationConstants.CACHE_NEWS);
 		ObjectInputStream in = new ObjectInputStream(fin);
 		ArrayList<News> object = (ArrayList<News>) in.readObject();
 		in.close();
@@ -33,7 +33,7 @@ public class CacheReadWriter {
 	public static void sauvegard_News(ArrayList<News> s, Activity activity)
 			throws IOException {
 		FileOutputStream fout = new FileOutputStream(activity.getCacheDir()
-				.getAbsolutePath() + "/newsnews");
+				.getAbsolutePath() + ApplicationConstants.CACHE_NEWS);
 		ObjectOutputStream out = new ObjectOutputStream(fout);
 
 		out.writeObject(s);

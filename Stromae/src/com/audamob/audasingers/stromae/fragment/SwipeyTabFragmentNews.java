@@ -47,7 +47,7 @@ public class SwipeyTabFragmentNews extends Fragment {
 		ViewGroup root = (ViewGroup) inflater.inflate(
 				R.layout.audamob_version_deux_activity_news, null);
 		final String title = getArguments().getString("title");
-		
+
 		newsList = new ArrayList<News>();
 		try {
 			newsList = CacheReadWriter.restore_News(getActivity());
@@ -60,9 +60,5 @@ public class SwipeyTabFragmentNews extends Fragment {
 		return root;
 
 	}
-
-
-	
-
 
 }

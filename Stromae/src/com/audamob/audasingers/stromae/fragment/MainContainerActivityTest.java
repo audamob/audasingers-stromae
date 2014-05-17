@@ -24,7 +24,9 @@ import com.audamob.audasingers.stromae.SlidingMenu.SlidingMenuBuilderConcrete;
 import com.audamob.audasingers.stromae.activity.DialogActivity;
 import com.audamob.audasingers.stromae.activity.MusicPlayer;
 import com.audamob.audasingers.stromae.model.Music;
+import com.audamob.audasingers.stromae.model.News;
 import com.audamob.audasingers.stromae.tool.adapter.SwipeyTabsPagerAdapter;
+import com.audamob.audasingers.stromae.tool.db.CacheReadWriter;
 import com.audamob.audasingers.stromae.tool.view.ImageResizerUtils;
 import com.audamob.audasingers.stromae.view.services.ShareService;
 import com.viewpagerindicator.TabPageIndicator;
@@ -48,6 +50,7 @@ public class MainContainerActivityTest extends ActivityBase {
 	public static int ITEM_BIO = 5;
 	public static int ITEM_SETTINGS = 6;
 	public static ShareService shareService;
+
 	// Your need to put this method in every Activity class where you want to
 	// have sliding menu.
 	@Override
@@ -69,17 +72,17 @@ public class MainContainerActivityTest extends ActivityBase {
 		activity = this;
 		setContentView(R.layout.audamob_version_deux_activity_maincontainer_test);
 		Bundle b = getIntent().getExtras();
-		boolean updateversion=b.getBoolean("updateversion");
-		Log.i("VERSION","isupdateversion :"+updateversion);
-		if(!updateversion){
-			Intent i =new Intent(this, DialogActivity.class);
+		boolean updateversion = b.getBoolean("updateversion");
+		Log.i("VERSION", "isupdateversion :" + updateversion);
+		if (!updateversion) {
+			Intent i = new Intent(this, DialogActivity.class);
 			startActivity(i);
 		}
-		
+
 		ActionBar actionBar = getActionBar();
 		if (actionBar != null)
 			actionBar.setDisplayHomeAsUpEnabled(false);
-		
+
 		ViewGroup mainContainer = (ViewGroup) findViewById(R.id.MainContainer);
 		Typeface font = Typeface.createFromAsset(getAssets(), "Cyberverse.otf");
 
@@ -132,20 +135,36 @@ public class MainContainerActivityTest extends ActivityBase {
 					R.string.Video_text) };
 			return tab_0;
 		case 1:
-			String[] tab_1 = {
-					activity.getResources().getString(R.string.Music_text)
-					};
+			String[] tab_1 = { activity.getResources().getString(
+					R.string.Music_text) };
 			return tab_1;
 		case 2:
 			String[] tab_2 = { activity.getResources().getString(
 					R.string.Lyrics_text) };
 			return tab_2;
 		case 3:
-			String[] tab_3 = {
-					activity.getResources().getString(R.string.NewsMTV_text),
-					activity.getResources().getString(R.string.Tweets_text) };
-			return tab_3;
+
+			ArrayList<News> newsList = new ArrayList<News>();
+			try {
+				newsList = CacheReadWriter.restore_News(activity);
+			} catch (Exception e) {
+				// TODO: handle exception
+			}
+			if (newsList.size() > 0) {
+				String[] tab_3 = {
+						activity.getResources()
+								.getString(R.string.NewsMTV_text),
+						activity.getResources().getString(R.string.Tweets_text) };
+				return tab_3;
+			} else {
+				String[] tab_33 = {
+						
+						activity.getResources().getString(R.string.Tweets_text) };
+				return tab_33;
+			}
+
 		case 4:
+
 			String[] tab_4 = { activity.getResources().getString(
 					R.string.Tweets_text) };
 			return tab_4;
@@ -187,10 +206,10 @@ public class MainContainerActivityTest extends ActivityBase {
 	public static int MediaPlayer_Mode = 1;
 	public static String MediaPlayer_Url = "";
 	public static Boolean MediaPlayer_finish_seeking = false;
-	public static Boolean mediaPayerPrepared=false;
+	public static Boolean mediaPayerPrepared = false;
 
 	public static void Stop_MediaPlayer() {
-		mediaPayerPrepared=false;
+		mediaPayerPrepared = false;
 		MediaPlayer_Connect = false;
 		try {
 			mediaPlayer.stop();
@@ -201,7 +220,7 @@ public class MainContainerActivityTest extends ActivityBase {
 	}
 
 	public static void Next_MediaPlayer() {
-		mediaPayerPrepared=false;
+		mediaPayerPrepared = false;
 		if (Mode_playlist_currentPosition == (Mode_playlist_List.size() - 1)) {
 			Mode_playlist_currentPosition = 0;
 		} else {
@@ -217,8 +236,9 @@ public class MainContainerActivityTest extends ActivityBase {
 				Mode_playlist_currentPosition);
 
 	}
+
 	public static void Previous_MediaPlayer() {
-		mediaPayerPrepared=false;
+		mediaPayerPrepared = false;
 		if (Mode_playlist_currentPosition == 0) {
 			Mode_playlist_currentPosition = Mode_playlist_List.size() - 1;
 		} else {
@@ -240,7 +260,7 @@ public class MainContainerActivityTest extends ActivityBase {
 
 	public static void Lancer_MediaPlayer_mode_playlist(
 			ArrayList<Music> ListMusic, int position) {
-		mediaPayerPrepared=false;
+		mediaPayerPrepared = false;
 		Log.d("Sizep", " current " + position);
 		Mode_playlist_List = ListMusic;
 		Mode_playlist_currentPosition = position;
@@ -267,8 +287,8 @@ public class MainContainerActivityTest extends ActivityBase {
 				public void onPrepared(MediaPlayer mp) {
 					// TODO Auto-generated method stub
 					if (MediaPlayer_Connect) {
-						mediaPayerPrepared=true;
-						
+						mediaPayerPrepared = true;
+
 						mediaPlayer.start();
 						MediaPlayer_Playing = true;
 					}
@@ -299,7 +319,7 @@ public class MainContainerActivityTest extends ActivityBase {
 			mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
 
 			mediaPlayer.prepareAsync();
-			
+
 			mediaPlayer.setOnPreparedListener(new OnPreparedListener() {
 
 				@Override
@@ -307,7 +327,7 @@ public class MainContainerActivityTest extends ActivityBase {
 					Log.d("MediaPlayer_audasinguer", "Prepared ");
 					// TODO Auto-generated method stub
 					if (MediaPlayer_Connect) {
-						mediaPayerPrepared=true;
+						mediaPayerPrepared = true;
 						mediaPlayer.start();
 						Log.d("MediaPlayer_audasinguer", "started ");
 						MediaPlayer_Playing = true;
@@ -347,15 +367,15 @@ public class MainContainerActivityTest extends ActivityBase {
 	@Override
 	public void onBackPressed() {
 		// TODO Auto-generated method stub
-		
-		if(shareService!=null){
-			if(shareService.getIsVisible()){
+
+		if (shareService != null) {
+			if (shareService.getIsVisible()) {
 				shareService.setDismiss();
-			}else{
+			} else {
 				super.onBackPressed();
 			}
-		}else{
-		super.onBackPressed();
+		} else {
+			super.onBackPressed();
 		}
 	}
 }

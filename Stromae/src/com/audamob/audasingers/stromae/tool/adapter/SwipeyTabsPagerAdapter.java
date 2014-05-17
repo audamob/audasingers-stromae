@@ -1,5 +1,8 @@
 package com.audamob.audasingers.stromae.tool.adapter;
 
+import java.util.ArrayList;
+
+import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -21,15 +24,17 @@ import com.audamob.audasingers.stromae.fragment.SwipeyTabFragmentNews;
 import com.audamob.audasingers.stromae.fragment.SwipeyTabFragmentSettings;
 import com.audamob.audasingers.stromae.fragment.SwipeyTabFragmentTweets;
 import com.audamob.audasingers.stromae.fragment.SwipeyTabFragmentVideos;
+import com.audamob.audasingers.stromae.model.News;
+import com.audamob.audasingers.stromae.tool.db.CacheReadWriter;
 
 public class SwipeyTabsPagerAdapter extends FragmentStatePagerAdapter implements
 		SwipeyTabsAdapter {
 	private String[] TabTitles;
-	private final Context mContext;
+	private final Activity mContext;
 	private ViewPager mViewPager;
 	private int TabToLoad;
 
-	public SwipeyTabsPagerAdapter(Context context, FragmentManager fm,
+	public SwipeyTabsPagerAdapter(Activity context, FragmentManager fm,
 			String[] tabs, ViewPager mviewPager, int TabToLoad) {
 		super(fm);
 		this.TabTitles = tabs;
@@ -79,6 +84,15 @@ public class SwipeyTabsPagerAdapter extends FragmentStatePagerAdapter implements
 		case 2:
 			return new SwipeyTabFragmentLyrics();
 		case 3:
+
+			ArrayList<News> newsList = new ArrayList<News>();
+			try {
+				newsList = CacheReadWriter.restore_News(mContext);
+			} catch (Exception e) {
+				// TODO: handle exception
+			}
+			
+			if(newsList.size()>0){
 			switch (position) {
 			case 0:
 				return new SwipeyTabFragmentNews();
@@ -86,6 +100,9 @@ public class SwipeyTabsPagerAdapter extends FragmentStatePagerAdapter implements
 			default:
 				return new SwipeyTabFragmentTweets();
 
+			}
+			}else {
+				return new SwipeyTabFragmentTweets();
 			}
 
 		case 4:

@@ -5,10 +5,14 @@ public class ApplicationConstants {
 	//Youtube
 	public static final String YOUTUBE_URL="https://www.youtube.com/watch?v=";
 	
+	//News
+	public static final String NEWS_PATH="http://www.mtv.com/artists/stromae/mtv-news/";
 	
 	//Lyric 
 	public static final String LYRIC_PATH="http://lyrics.wikia.com/";
 	public static final String LYRIC_SINGER_NAME="Stromae:";
+	public static final String SINGER_NAME="Stromae";
+	
 	public static final String TWITTER_SINGER_ACCOUNT="@Stromae";
 	public static final String TWITTER_URL ="https://twitter.com/Stromae/";
 
@@ -19,6 +23,7 @@ public class ApplicationConstants {
 	public static final String CACHE_COUNT_NEW_VIDEOS="/audamobstromaecountnewvideos";
 	public static final String CACHE_COUNT_NEW_MUSICS="/audamobstromaecountnewmusics";
 	public static final String CACHE_VERSION="/audamobstromaeversion";
+	public static final String CACHE_NEWS="/audamobstromaenewsnews";
 
 
 	//Server Paths
