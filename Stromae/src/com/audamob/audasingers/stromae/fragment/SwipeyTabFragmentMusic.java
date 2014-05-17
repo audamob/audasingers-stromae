@@ -24,7 +24,7 @@ import com.audamob.audasingers.stromae.tool.view.ImageResizerUtils;
 
 public class SwipeyTabFragmentMusic extends Fragment {
 	private SimpleDateFormat FormatterDuration = new SimpleDateFormat("mm:ss");
-	 ArrayList<Music> musicList;
+	ArrayList<Music> musicList;
 	ArrayList<Music> AllLyricList;
 
 	static SwipeyTabFragmentMusic f;
@@ -52,14 +52,16 @@ public class SwipeyTabFragmentMusic extends Fragment {
 
 		ViewGroup root = (ViewGroup) inflater.inflate(
 				R.layout.audamob_version_deux_layout_activity_music, null);
-		ViewGroup mainContainer=(ViewGroup)root.findViewById(R.id.MainContainer);
-		Typeface font =Typeface.createFromAsset(getActivity().getAssets(), "ExoMedium.otf");
+		ViewGroup mainContainer = (ViewGroup) root
+				.findViewById(R.id.MainContainer);
+		Typeface font = Typeface.createFromAsset(getActivity().getAssets(),
+				"ExoMedium.otf");
 
 		ImageResizerUtils.setFont(getActivity(), mainContainer, font);
 		final String title = getArguments().getString("title");
-
+		musicList = new ArrayList<Music>();
 		try {
-			musicList=CacheReadWriter.restoreListMusics(getActivity());
+			musicList = CacheReadWriter.restoreListMusics(getActivity());
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -67,9 +69,10 @@ public class SwipeyTabFragmentMusic extends Fragment {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-		if(musicList==null){
-			musicList=DataSource.getListMusics();
+
+		if (musicList.size() == 0) {
+			Log.d("FragmentMusic", " musicList bien Null  ");
+			musicList = DataSource.getListMusics();
 			try {
 				CacheReadWriter.sauvegardListMusics(musicList, getActivity());
 			} catch (IOException e) {
@@ -80,9 +83,9 @@ public class SwipeyTabFragmentMusic extends Fragment {
 		for (int s = 0; s < musicList.size(); s++)
 			AllLyricList.add(musicList.get(s));
 
-
 		ListVideo = (ListView) root.findViewById(R.id.ListAppM);
-		ListVideo.setAdapter(new MusicAdapter(getActivity(), musicList,MusicAdapter.MODE_MUSIC));
+		ListVideo.setAdapter(new MusicAdapter(getActivity(), musicList,
+				MusicAdapter.MODE_MUSIC));
 		return root;
 
 	}
@@ -98,23 +101,19 @@ public class SwipeyTabFragmentMusic extends Fragment {
 		TestTest(getActivity());
 
 	}
-	
-
 
 	int EditSongNameTextlength = 0;
-		
-	private void TestTest(Activity activity){
-		
+
+	private void TestTest(Activity activity) {
+
 		try {
-			
-				for (Music music : musicList) {
-					
-					
-					Log.d("DebugPlaylist","Musi Name: "+music.getPlaylistName());
-				}
-				Log.d("DebugPlaylist","********************************************");
-				
-			
+
+			for (Music music : musicList) {
+
+				Log.d("DebugPlaylist", "Musi Name: " + music.getPlaylistName());
+			}
+			Log.d("DebugPlaylist",
+					"********************************************");
 
 		} catch (Exception e) {
 			// TODO: handle exception
