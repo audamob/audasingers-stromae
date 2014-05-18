@@ -12,6 +12,7 @@ import android.view.Window;
 import android.widget.TextView;
 
 import com.audamob.audasingers.stromae.R;
+import com.audamob.audasingers.stromae.constant.ApplicationConstants;
 import com.audamob.audasingers.stromae.tool.view.ImageResizerUtils;
 
 public class DialogActivity extends Activity {
@@ -51,13 +52,13 @@ public class DialogActivity extends Activity {
 				try {
 
 					Intent intent = new Intent(Intent.ACTION_VIEW, Uri
-							.parse("market://details?id=com.LiL.Wayne.Activity" ));
+							.parse(ApplicationConstants.MARKET_PLACE_APP));
 					startActivity(intent);
 
 				} catch (Exception e) {
 					Intent i = new Intent(
 							Intent.ACTION_VIEW,
-							Uri.parse("https://play.google.com/store/apps/details?id=com.LiL.Wayne.Activity"));
+							Uri.parse(ApplicationConstants.MARKET_PLACE_WEB));
 					activity.startActivity(i);
 				}
 

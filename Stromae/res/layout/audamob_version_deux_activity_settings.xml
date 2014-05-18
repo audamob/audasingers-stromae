@@ -107,7 +107,7 @@
                         android:layout_centerVertical="true"
                         android:layout_marginLeft="20dp"
                         android:layout_toRightOf="@+id/icon_donnate"
-                        android:text="Get the donnate version"
+                        android:text="Market Place"
                         android:textColor="@color/flat_silver"
                         android:textSize="18dp" />
                 </RelativeLayout>
