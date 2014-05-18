@@ -20,6 +20,7 @@ import android.widget.ListView;
 import android.widget.RelativeLayout;
 
 import com.audamob.audasingers.stromae.R;
+import com.audamob.audasingers.stromae.constant.ApplicationConstants;
 import com.audamob.audasingers.stromae.tool.view.ImageResizerUtils;
 
 public class SwipeyTabFragmentSettings extends Fragment {
@@ -68,13 +69,13 @@ public class SwipeyTabFragmentSettings extends Fragment {
 				try {
 
 					Intent intent = new Intent(Intent.ACTION_VIEW, Uri
-							.parse("market://details?id=com.LiL.Wayne.Activity" ));
+							.parse(ApplicationConstants.MARKET_APP_DETAILS ));
 					startActivity(intent);
 
 				} catch (Exception e) {
 					Intent i = new Intent(
 							Intent.ACTION_VIEW,
-							Uri.parse("https://play.google.com/store/apps/details?id=com.LiL.Wayne.Activity"));
+							Uri.parse(ApplicationConstants.MARKET_WEB_DETAILS));
 					activity.startActivity(i);
 				}
 			}
@@ -96,13 +97,13 @@ public class SwipeyTabFragmentSettings extends Fragment {
 				try {
 
 					Intent intent = new Intent(Intent.ACTION_VIEW, Uri
-							.parse("market://details?id=com.LiL.Wayne.ActivityDonateVersion" ));
+							.parse(ApplicationConstants.MARKET_PLACE_APP));
 					startActivity(intent);
 
 				} catch (Exception e) {
 					Intent i = new Intent(
 							Intent.ACTION_VIEW,
-							Uri.parse("https://play.google.com/store/apps/details?id=com.LiL.Wayne.ActivityDonateVersion"));
+							Uri.parse(ApplicationConstants.MARKET_PLACE_WEB));
 					activity.startActivity(i);
 				}
 
@@ -120,12 +121,12 @@ public class SwipeyTabFragmentSettings extends Fragment {
 				try {
 
 					Intent intent = new Intent(Intent.ACTION_VIEW, Uri
-							.parse("twitter://user?user_id=2486539399"));
+							.parse(ApplicationConstants.AUDAMOB_TWITTER_ID));
 					startActivity(intent);
 
 				} catch (Exception e) {
 					Intent i = new Intent(Intent.ACTION_VIEW, Uri
-							.parse("https://twitter.com/audamob"));
+							.parse(ApplicationConstants.AUDAMOB_TWITTER_USERNAME));
 					activity.startActivity(i);
 				}
 			}
@@ -140,13 +141,13 @@ public class SwipeyTabFragmentSettings extends Fragment {
 				try {
 
 					Intent intent = new Intent(Intent.ACTION_VIEW, Uri
-							.parse("fb://profile/" + "411481418918147"));
+							.parse(ApplicationConstants.AUDAMOB_FACEBOOK_ID));
 					startActivity(intent);
 
 				} catch (Exception e) {
 
 					Intent i = new Intent(Intent.ACTION_VIEW, Uri
-							.parse("https://www.facebook.com/com.audamob"));
+							.parse(ApplicationConstants.AUDAMOB_FACEBOOK_USERNAME));
 					activity.startActivity(i);
 				}
 
@@ -167,8 +168,9 @@ public class SwipeyTabFragmentSettings extends Fragment {
 							android.content.Intent.ACTION_SEND);
 					intent.setType("text/plain");
 					intent.putExtra(Intent.EXTRA_SUBJECT,
-							"Lil Wayne Application : feedback");
-					String[] tos = { "lil.wayne@audamob.com" };
+							ApplicationConstants.FEEDBAKC_EMAIL_OBJECT);
+					
+					String[] tos = { ApplicationConstants.FEEDBACK_ADDRESS };
 
 					intent.putExtra(Intent.EXTRA_EMAIL, tos);
 					
@@ -208,7 +210,7 @@ public class SwipeyTabFragmentSettings extends Fragment {
 				try {
 					Intent i = new Intent(
 							Intent.ACTION_VIEW,
-							Uri.parse("https://play.google.com/store/apps/developer?id=TheATeam"));
+							Uri.parse(ApplicationConstants.MARKET_PLACE_WEB));
 					activity.startActivity(i);
 				} catch (Exception e) {
 					// TODO: handle exception

@@ -47,8 +47,20 @@ public class ApplicationConstants {
 	  public static final String DEVELOPER_KEY = "AIzaSyATSoZKdWVoHz1sQxGVwOsbWtYOgLnZIf0";
 	  
 	  //FTP ACCOUNT
-	  public static final String FTP_ACCOUNTS_FOLDER = "/apps/accounts/audasingers/Stromae/";
+	  public static final String FTP_ACCOUNTS_FOLDER = "/apps/accounts/audasingers/stromae/";
 	  public static final String FTP_ADDRESS = "ftp.audamob.com";
 	  public static final String FTP_LOGIN = "u76404186";
 	  public static final String FTP_PASSWORD = "j1aimeallah";
+	  
+	  //ABOUT US 
+	  public static final String AUDAMOB_TWITTER_USERNAME = "https://twitter.com/audamob";
+	  public static final String AUDAMOB_TWITTER_ID = "twitter://user?user_id=2486539399";
+	  public static final String AUDAMOB_FACEBOOK_USERNAME = "https://www.facebook.com/com.audamob";
+	  public static final String AUDAMOB_FACEBOOK_ID = "fb://profile/" + "411481418918147";
+	  public static final String MARKET_PLACE_APP = "market://developer?id=TheATeam";
+	  public static final String MARKET_PLACE_WEB = "https://https://play.google.com/store/apps/developer?id=TheATeam";
+	  public static final String MARKET_WEB_DETAILS = "https://play.google.com/store/apps/details?id=com.audamob.audasingers.stromae";
+	  public static final String MARKET_APP_DETAILS = "market://details?id=com.audamob.audasingers.stromae";
+	  public static final String FEEDBACK_ADDRESS = "stromae@audamob.com";
+	  public static final String FEEDBAKC_EMAIL_OBJECT = "Stromae Application : feedback";
 }
